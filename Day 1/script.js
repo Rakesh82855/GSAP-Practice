@@ -16,13 +16,13 @@ gsap.from("#box2", {
     repeat:-1,//reapeat(-1) matlab infinite time chalega
     yoyo:true //it works like real yoyo
 })
-// gsap.from("h1", {
-//     y:20,
-//     opacity:0,
-//     duration:2,
-//     delay:1,
-//     stagger:1 //multiple chij(h1 tags) ek ek kar chalegi, minus(-1) krke chije ulti chalti h
-// })
+gsap.from("h1", {
+    y:20,
+    opacity:0,
+    duration:2,
+    delay:1,
+    stagger:1 //multiple chij(h1 tags) ek ek kar chalegi, minus(-1) krke chije ulti chalti h
+})
 var tl = gsap.timeline()
 tl.from("h2", {
     y:-20,
