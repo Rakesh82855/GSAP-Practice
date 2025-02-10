@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/* Scroll Trigger */
+#page1 {
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30bced;
+}
+#page2 {
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303036;
+}
+#page3 {
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc5130;
+}
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: #fffaff;
+}
