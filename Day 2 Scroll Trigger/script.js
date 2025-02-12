@@ -45,13 +45,13 @@ gsap.from("#page3 #box", {
 })
 //pin
 gsap.to("#page4 h1", {
-    transform:"translateX(-32%)",
+    transform:"translateX(-163%)",
     scrollTrigger:{
         trigger:"#page4",
         scroller:"body",
         markers:true,
         start:"top 0%",
-        end:"top -100%",
+        end:"top -150%",
         scrub:2,
         pin:true       
     }
