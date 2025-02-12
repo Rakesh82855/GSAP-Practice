@@ -1,13 +1,13 @@
-var initialPath = `M 20 100 Q 675 100 1340 100`
-var finalPath = `M 20 100 Q 675 100 1340 100`
+var initialPath = `M 40 150 Q 960 150 1880 150`
+var finalPath = `M 40 150 Q 960 150 1880 150`
 var string = document.querySelector("#string")
 var pointer = document.querySelector("#pointer")
-window.addEventListener("mousemove", function(details){
-    pointer.style.left = details.clientX;
-    pointer.style.top = details.clientY;
+document.addEventListener("mousemove", function(details){
+    pointer.style.left = details.clientX - 5 + "px";
+    pointer.style.top = details.clientY - 5 + "px";
 })
 string.addEventListener("mousemove", function(details){
-    initialPath = `M 20 100 Q ${details.x} ${details.y+10} 1340 100`
+    initialPath = `M 40 150 Q ${details.x} ${details.y} 1880 150`
     //attr , ease
     gsap.to("svg path", {
         attr:{d:initialPath},
