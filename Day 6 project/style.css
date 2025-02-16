@@ -17,4 +17,8 @@ body {
 }
 h1 {
     font-size: 100px;
+    overflow: hidden;
+}
+h1 span {
+    display: inline-block;
 }
