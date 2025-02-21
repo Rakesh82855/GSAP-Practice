@@ -39,29 +39,40 @@ function page1Animation() {
         stagger:0.15
     })
 }
-// page1Animation()
-var tl2 = gsap.timeline({
-    scrollTrigger:{
-        trigger:".section2" ,
-        scroller:"body" ,
-        markers:true,
-        start: "top 50%",
-        end:"top 0",
-        // scrub: 2,
-    }
-})
-tl2.from(".services", {
-    y:30,
-    opacity:0
-})
-// gsap.from(".services h1", {
-//     x:-100,
-//     opacity:0,
-//     duration:0.5,
-//     scrollTrigger:{
-//         trigger:".services h1",
-//         scroll:"body",
-//         markers:true,
-//         start:"top 70%"
-//     }
-// })
+function page2Animation() {
+    var tl2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".section2" ,
+            scroller:"body" ,
+            start: "top 60%",
+            end:"top 0",
+            // scrub: 2,
+        }
+    })
+    tl2.from(".services", {
+        y:30,
+        opacity:0
+    })
+    tl2.from("#left1", {
+        x:-300,
+        duration:1,
+        opacity:0
+    },"anime") //anime=both animate together
+    tl2.from("#right1", {
+        x:300,
+        duration:1,
+        opacity:0
+    },"anime")
+    tl2.from("#left2", {
+        x:-300,
+        duration:1,
+        opacity:0
+    },"anime2")
+    tl2.from("#right2", {
+        x:300,
+        duration:1,
+        opacity:0
+    },"anime2")
+}
+page1Animation()
+page2Animation()
